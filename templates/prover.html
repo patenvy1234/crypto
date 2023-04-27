@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Prover Page</title>
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+	<h1>Welcome to Prover Page</h1>
+	<form action="{{ url_for('verifier') }}" method="post">
+		<label for="input">Enter your input:</label>
+		<input type="text" id="input" name="input">
+		<br><br>
+		<input type="submit" value="Submit">
+	</form>
+</body>
+</html>
+
